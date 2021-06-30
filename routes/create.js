@@ -25,8 +25,7 @@ router.get("/", async (req, res) => {
       let db = new obj(movie);
       await db.save();
     }
-    console.log(await Movie.find({}));
-    console.log(await User.find({}));
+    console.log(await obj.find({}));
   };
 
   const deleteCreate = async () => {

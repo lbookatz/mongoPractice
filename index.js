@@ -5,6 +5,8 @@ const app = express();
 // const User = require("./models/user");
 // const Movie = require("./models/movie");
 const deleteCreate = require("./routes/create")
+const showdb = require("./routes/showdb")
+const addmovie = require("./routes/addmovie")
 
 
 mongoose.connect("mongodb://localhost:27017/signup", {
@@ -14,6 +16,10 @@ mongoose.connect("mongodb://localhost:27017/signup", {
 
 app.use(express.json())
 app.use("/create",deleteCreate)
+app.use("/showdb",showdb)
+app.use("/addmovie",addmovie)
+
+
 
 
 const port = process.env.PORT || 5000;
