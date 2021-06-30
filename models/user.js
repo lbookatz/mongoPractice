@@ -5,4 +5,4 @@ const User = new mongoose.Schema({
     email: {type: String, required: true}
 });
 
-module.exports = mongoose.model('users', user);
+module.exports = mongoose.model('users', User);
