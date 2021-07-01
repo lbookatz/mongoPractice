@@ -12,8 +12,8 @@ router.get("/", async (req, res) => {
   ];
 
   const userArray = [
-    { name: "Lance", email: "l@book" },
-    { name: "Jeremy", email: "j@eremy" }
+    { name: "Lance", email: "l@book", favorites: ["godfather","bambi"] },
+    { name: "Jeremy", email: "j@eremy", }
   ];
 
   const clearMovie = async (obj) => {
